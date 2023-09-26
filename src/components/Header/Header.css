@@ -1,0 +1,6 @@
+/* Define a class for the active link */
+.active-link:active {
+    background-color: white !important;
+    text-decoration: underline !important;
+    color: red !important;
+}
