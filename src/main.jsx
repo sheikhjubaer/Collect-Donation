@@ -33,10 +33,10 @@ const router = createBrowserRouter([
         element: <Donation></Donation>,
         loader: () => fetch('../public/donationsCategory.json')
       },
-      // {
-      //   path: '/statistics',
-      //   element: <Statistics></Statistics>
-      // },
+      {
+        path: '/statistics',
+        element: <Statistics></Statistics>
+      },
       {
         path: '/searchedDonation/:title',
         element: <SearchedCategory></SearchedCategory>,
