@@ -1,8 +1,6 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Some Project Features of my Assignment (Min. 3) are given in the following:
+- All the donation categories with its details are featured in the Homepage as cards. Clicking each card will take you to the details of that particular donation, where you can donate just by adding a simple button with donation price written. After succesful donation, you will be notified with a successful Toast.
+- Also at the Homepage you will see a search field at the banner section, were you can put your desire card category (make sure the types category is camel case, as they are case sensitive) and view all those cards with your desired categoty name together, in order to avoid difficulties in searching! 
+- In the Donation route, we will see all the donations that you have made so far in details with cards. If your donation is more than four, then a See More button will appear. Then after clicking it, you will see all the donations you have made and the button will disappear.
+- In the Statistics Route, you can see the total percentage of your donation vs all the (12) donations. This was done with simple math. We stored all the donations id in the Local Seesion Storage, from where we are getting the ids which getting us the number of donations. Let you have made 5 donations, so your donation will be (5/12)*100 = 42% (approx.). Then total donation will be (100 - 42) = 58%. Thats how you can see how much you are contributing through a Pie chart statistically.
+- Finally, after closing a browser your details of donations will be dissapear, whereas reloading won't!  
