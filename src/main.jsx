@@ -26,12 +26,13 @@ const router = createBrowserRouter([
       {
         path: '/donation/:id',
         element: <DonationDetails></DonationDetails>,
-        loader: () => fetch('../public/donationsCategory.json')
+        // loader: () => fetch('../public/donationsCategory.json')
+        loader: () => fetch('/donationsCategory.json')
       },
       {
         path: '/donations',
         element: <Donation></Donation>,
-        loader: () => fetch('../public/donationsCategory.json')
+        loader: () => fetch('/donationsCategory.json')
       },
       {
         path: '/statistics',
@@ -40,7 +41,7 @@ const router = createBrowserRouter([
       {
         path: '/searchedDonation/:title',
         element: <SearchedCategory></SearchedCategory>,
-        loader: () => fetch('../public/donationsCategory.json') 
+        loader: () => fetch('/donationsCategory.json') 
       }
     ]
   },
