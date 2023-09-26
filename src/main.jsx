@@ -37,11 +37,11 @@ const router = createBrowserRouter([
       //   path: '/statistics',
       //   element: <Statistics></Statistics>
       // },
-      // {
-      //   path: '/searchedDonation/:title',
-      //   element: <SearchedCategory></SearchedCategory>,
-      //   loader: () => fetch('../public/donationsCategory.json') 
-      // }
+      {
+        path: '/searchedDonation/:title',
+        element: <SearchedCategory></SearchedCategory>,
+        loader: () => fetch('../public/donationsCategory.json') 
+      }
     ]
   },
 ]);
